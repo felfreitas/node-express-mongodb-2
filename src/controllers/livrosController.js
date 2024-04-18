@@ -11,7 +11,6 @@ class LivroController {
             res.status(200).json(livrosResultado);
         } catch (erro) {
             next(erro);
-            // res.status(500).json({ message: "Erro interno no servidor" });
         }
     };
 
@@ -26,7 +25,6 @@ class LivroController {
             res.status(200).send(livroResultados);
         } catch (erro) {
             next(erro);
-            // res.status(400).send({message: `${erro.message} - Id do livro não localizado.`});
         }
     };
 
@@ -39,7 +37,6 @@ class LivroController {
             res.status(201).send(livroResultado.toJSON());
         } catch (erro) {
             next(erro);
-            // res.status(500).send({message: `${erro.message} - falha ao cadastrar livro.`});
         }
     };
 
@@ -52,7 +49,6 @@ class LivroController {
             res.status(200).send({ message: "Livro atualizado com sucesso" });
         } catch (erro) {
             next(erro);
-            // res.status(500).send({message: erro.message});
         }
     };
 
@@ -65,7 +61,6 @@ class LivroController {
             res.status(200).send({ message: "Livro removido com sucesso" });
         } catch (erro) {
             next(erro);
-            // res.status(500).send({message: erro.message});
         }
     };
 
@@ -78,7 +73,6 @@ class LivroController {
             res.status(200).send(livrosResultado);
         } catch (erro) {
             next(erro);
-            // res.status(500).json({ message: "Erro interno no servidor" });
         }
     };
 
